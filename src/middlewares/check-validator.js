@@ -2,7 +2,7 @@ import { body, param } from "express-validator";
 import { existeEmail, existeUsername, userExists } from "../helpers/db-validators.js";
 import { validarCampos } from "./validar-campos.js";
 import { deleteFileOnError } from "./delete-file-on-error.js";
-import { getUserById } from "../user/user.controller.js";
+
 
 
 export const registerValidator = [
