@@ -31,7 +31,7 @@ export const loginValidator = [
     deleteFileOnError
 ]
 
-export const getUserById = [
+export const getUserByIdValidator = [
     body("uid").isMongoId().withMessage("No es un ID válido"),
     param("uid").custom(userExists),
     validarCampos,
